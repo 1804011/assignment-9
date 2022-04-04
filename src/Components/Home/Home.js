@@ -43,8 +43,9 @@ const Banner = () => {
 					Your favourite laptop
 				</h1>
 				<p className="info text-lg text-black font-semibold pr-8 mt-2">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error
-					quibusdam ex sapiente veritatis vitae a velit aut ducimus corrupti.
+					You are welcome to our laptop store.All kind of laptop of all popular
+					brands are availabe at affordable price. you may be beneficial by our
+					service.
 				</p>
 				<button className="bg-purple-400 p-2 mt-2 font-bold text-purple-900">
 					Live demo
