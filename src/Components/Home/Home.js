@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import bannerImg from "../../images/bannerImg.jfif";
+import useReviews from "../../hooks/useReviews";
+import Review from "../Review/Review";
 const Home = () => {
+	const [reviews, setReviews] = useReviews();
+	let arr = reviews.slice(0, 3);
 	return (
 		<div>
 			<Banner></Banner>
+			<h1 className="text-center text-3xl font-semibold my-6">
+				Customer Review (3)
+			</h1>
+			<div className="reviews-container flex justify-center">
+				{arr.map((review) => (
+					<Review data={review}></Review>
+				))}
+			</div>
+			<div className="text-center my-5">
+				<button className="px-4 py-2 bg-purple-500 text-white font-semibold">
+					See all reviews
+				</button>
+			</div>
 		</div>
 	);
 };
 const Banner = () => {
 	return (
-		<div className="banner-container flex p-10 align-items-center mt-3">
+		<div className="banner-container flex p-10 align-items-center mt-3 mb-8">
 			<div className="banner-info p-12">
 				<h1 className="text-5xl font-bold">Your next laptop</h1>
 				<h1 className="text-5xl font-bold text-purple-800 my-1">

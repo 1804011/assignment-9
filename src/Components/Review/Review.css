@@ -1,0 +1,27 @@
+.review-container {
+	width: 250px;
+	margin: 8px auto;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 24px;
+}
+
+.review-container .upper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+.review-container .upper img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+.review-container .upper .right {
+	margin-left: 16px;
+}
+.review-container .lower {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: italic;
+}
