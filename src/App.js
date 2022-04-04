@@ -9,12 +9,12 @@ import About from "./Components/About/About";
 import CustomLink from "./Components/CustomLink/CustomLink";
 function App() {
 	return (
-		<div className="App">
-			<h1 className="text-2xl text-red-500 font-semibold mt-6 uppercase">
+		<div>
+			<h1 className="text-2xl text-red-500 font-semibold mt-6 uppercase text-center">
 				Welcome to our laptop review website
 			</h1>
 
-			<div className="container">
+			<div className="container   ">
 				<nav className="nav-menu mt-8 ">
 					<CustomLink to="/home" className="nav-link">
 						Home
