@@ -3,9 +3,15 @@ import "./Home.css";
 import bannerImg from "../../images/bannerImg.jfif";
 import useReviews from "../../hooks/useReviews";
 import Review from "../Review/Review";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
 	const [reviews, setReviews] = useReviews();
 	let arr = reviews.slice(0, 3);
+	const navigate = useNavigate();
+	const handleButton = () => {
+		const path = "/reviews";
+		navigate(path);
+	};
 	return (
 		<div>
 			<Banner></Banner>
@@ -14,11 +20,14 @@ const Home = () => {
 			</h1>
 			<div className="reviews-container flex justify-center">
 				{arr.map((review) => (
-					<Review data={review}></Review>
+					<Review data={review} key={review.id}></Review>
 				))}
 			</div>
 			<div className="text-center my-5">
-				<button className="px-4 py-2 bg-purple-500 text-white font-semibold">
+				<button
+					className="px-4 py-2 bg-purple-500 text-white font-semibold"
+					onClick={handleButton}
+				>
 					See all reviews
 				</button>
 			</div>
