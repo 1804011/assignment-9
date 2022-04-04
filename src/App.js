@@ -39,7 +39,12 @@ function App() {
 					<Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
 					<Route path="/blogs" element={<Blogs></Blogs>}></Route>
 					<Route path="/about" element={<About></About>}></Route>
-					<Route path="*" element={"404 not found"}></Route>
+					<Route
+						path="*"
+						element={
+							<h1 className="text-3xl font-bold uppercase">404 Not found</h1>
+						}
+					></Route>
 				</Routes>
 			</div>
 		</div>
