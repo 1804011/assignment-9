@@ -1,6 +1,6 @@
 ## Laptop Review Website
 
-Website Link: [Laptop Review Website ](https://sharif-assignment9.netlify.app).
+Website Link: [Laptop Review Website ](https://sharif-assigments9.netlify.app).
 
 ### Task completed in this project
 
